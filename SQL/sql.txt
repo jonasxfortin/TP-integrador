@@ -1,0 +1,54 @@
+
+
+
+SET search_path TO "BO", information_schema;
+
+create table usuario (id_usuario varchar primary key, usuario varchar,contraseña varchar, direccion varchar);
+insert into usuario values('alanww','alan encina','abcde','triunvirato');
+select * from usuario;
+
+insert into usuario values('camile','camila','efghj','bernal');
+insert into usuario values('kiki','kiki encina','abcde','quilmes');
+insert into usuario values('kiun','kiunsito','abcde','avellaneda');
+insert into usuario values('terry','terry','cde','unamuno');
+
+select * from usuario;
+
+create table producto (id_producto varchar primary key, descripcion varchar,cantidad int, proveedor varchar);
+select * from producto;
+
+insert into producto values('af22','motorola',5,'movistar');
+select * from producto;
+
+(por las dudas) update producto set id_producto='AF22' WHERE id_producto='asdasd';
+
+select * from producto;
+
+insert into producto values('Po77','celular gris',6,'claro');
+insert into producto values('jk88','celular morado',10,'personal');
+insert into producto values('E744','celular blanco',20,'movistar');
+insert into producto values('Yjpo','celular negro',4,'claro');
+insert into producto values('Ey77','celular amarillo',4,'movistar');
+select * from producto;
+create table pedido (producto varchar, usuario varchar,cantidad int, id_factura varchar primary key, monto int);
+select * from pedido;
+insert into pedido values('celular','jonatan',6,789458,16000);
+select * from pedido;
+insert into pedido values('celular','alan',4,789000,20000);
+insert into pedido values('celular','camila',1,909458,19000);
+insert into pedido values('celular','monica',8,756458,18000);
+insert into pedido values('celular','juan',2,457458,22000);
+insert into pedido values('celular','luci',2,200458,40000);
+select * from pedido;
+create table factura (id varchar primary key, monto int,tipo_pago varchar);
+select* from factura;
+insert into factura values(789458,6,'mercado pago');
+insert into factura values(789000,6,'mercado pago');
+insert into factura values(909458,6,'debito');
+insert into factura values(756458,6,'credito');
+insert into factura values(457458,6,'credito');
+insert into factura values(200458,6,'mercado pago');						  
+
+select* from factura;
+select * from pedido join usuario on pedido.usuario=usuario.usuario;
+select pedido.producto from pedido join usuario on pedido.usuario=usuario.usuario;
