@@ -1,54 +1,78 @@
+create table usuario (id_usuario varchar primary key, nombre_usuario varchar,contraseña varchar, direccion varchar);
 
-
-
-SET search_path TO "BO", information_schema;
-
-create table usuario (id_usuario varchar primary key, usuario varchar,contraseña varchar, direccion varchar);
-insert into usuario values('alanww','alan encina','abcde','triunvirato');
-select * from usuario;
-
-insert into usuario values('camile','camila','efghj','bernal');
-insert into usuario values('kiki','kiki encina','abcde','quilmes');
-insert into usuario values('kiun','kiunsito','abcde','avellaneda');
-insert into usuario values('terry','terry','cde','unamuno');
+insert into usuario values('abc000','alan encina','abcde','triunvirato');
+insert into usuario values('abc001','camila','efghj','bernal');
+insert into usuario values('abc002','kiki encina','abcde','quilmes');
+insert into usuario values('abc003','kiunsito','abcde','avellaneda');
+insert into usuario values('abc004','terry','cde','unamuno');
 
 select * from usuario;
 
-create table producto (id_producto varchar primary key, descripcion varchar,cantidad int, proveedor varchar);
+create table producto (id_producto varchar primary key, descripcion varchar, proveedor varchar);
+
+insert into producto values('af22','motorola','movistar');
+insert into producto values('fd54','motorola gris','claro');
+insert into producto values('gh34','samsung morado','personal');
+insert into producto values('ju54','samsung blanco','movistar');
+insert into producto values('ju44','motorola negro','claro');
+insert into producto values('fc23','motorola gris','personal');
+insert into producto values('df21','huawei negro','movistar');
+
 select * from producto;
 
-insert into producto values('af22','motorola',5,'movistar');
-select * from producto;
-
-(por las dudas) update producto set id_producto='AF22' WHERE id_producto='asdasd';
-
-select * from producto;
-
-insert into producto values('Po77','celular gris',6,'claro');
-insert into producto values('jk88','celular morado',10,'personal');
-insert into producto values('E744','celular blanco',20,'movistar');
-insert into producto values('Yjpo','celular negro',4,'claro');
-insert into producto values('Ey77','celular amarillo',4,'movistar');
-select * from producto;
 create table pedido (producto varchar, usuario varchar,cantidad int, id_factura varchar primary key, monto int);
+
+insert into pedido values('af22','abc000','1','150','22000');
+insert into pedido values('fd54','abc000','1','151','24000');
+insert into pedido values('gh34','abc001','2','152','45000');
+insert into pedido values('ju54','abc003','3','153','68000');
+insert into pedido values('ju44','abc004','1','154','20000');
+insert into pedido values('df21','abc004','1','155','26000');
+
 select * from pedido;
-insert into pedido values('celular','jonatan',6,789458,16000);
-select * from pedido;
-insert into pedido values('celular','alan',4,789000,20000);
-insert into pedido values('celular','camila',1,909458,19000);
-insert into pedido values('celular','monica',8,756458,18000);
-insert into pedido values('celular','juan',2,457458,22000);
-insert into pedido values('celular','luci',2,200458,40000);
-select * from pedido;
+
 create table factura (id varchar primary key, monto int,tipo_pago varchar);
-select* from factura;
-insert into factura values(789458,6,'mercado pago');
-insert into factura values(789000,6,'mercado pago');
-insert into factura values(909458,6,'debito');
-insert into factura values(756458,6,'credito');
-insert into factura values(457458,6,'credito');
-insert into factura values(200458,6,'mercado pago');						  
+
+insert into factura values(150,22000,'aplicacion');
+insert into factura values(151,24000,'aplicacion');
+insert into factura values(152,45000,'efectivo');
+insert into factura values(153,68000,'credito');
+insert into factura values(154,20000,'credito');
+insert into factura values(155,26000,'aplicacion');						  
 
 select* from factura;
-select * from pedido join usuario on pedido.usuario=usuario.usuario;
-select pedido.producto from pedido join usuario on pedido.usuario=usuario.usuario;
+
+A-
+select nombre_usuario, producto, cantidad, monto from usuario
+join pedido on usuario.id_usuario=pedido.usuario;
+
+B-
+select producto, pedido.monto, tipo_pago from pedido
+join factura
+on pedido.id_factura=factura.id;
+
+C-
+select descripcion, cantidad, pedido.monto from pedido
+join producto
+on pedido.producto=producto.id_producto;
+
+D-
+select * from pedido
+join factura
+on factura.id=pedido.id_factura
+where factura.tipo_pago = 'efectivo';
+
+E-
+select id_usuario, nombre_usuario, direccion, pedido.cantidad, pedido.id_factura from usuario
+join pedido
+on usuario.id_usuario=pedido.usuario;
+
+F-
+select * from factura
+where monto>25000;
+(era a 500 pero usamos precio PESO xD)
+
+G-
+update factura set tipo_pago='debito' where tipo_pago='aplicacion';
+select * from factura;
+
