@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mantiene el contenido al limite de la pagina, lo ancho y alto se suma automatico con el borde de la caja*/
+
+body {
+    display: grid;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e7dd53;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    width: 100px;
+}
+
+header div p {
+    text-align: center;
+    color: red;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    margin-right: 10px;
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+}
+header a:hover{
+    color: crimson;
+}
