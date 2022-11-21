@@ -10,20 +10,27 @@
 <body>
     <div class="logo">
         <img src="https://i.postimg.cc/cH3vDk4J/pedidosya.png" width="200px">
-        
-        
+
     </div>
     <div class="form-login">
         <h1>Login</h1>
-        <form>
-            <input class="controls" type="text" placeholder="Usuario" required> <br>
-            <input class="controls" type="text" placeholder="Contraseña" required> <br></input>
-            <input class="buttons" type="submit" name="" value="Login">
+        <script>
+            function usrpas(){
+            if (document.form1.txt.value=="admin" && document.form1.num.value=="1234"){window.location="index.html"}
+            else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+            }
+            document.oncontextmenu=new Function("return false");
+            </script>
+            <form name="form1">
+            <input class="controls" type="text" placeholder="Usuario" name="txt" required><br>
+            <input class="controls" type="text" placeholder="Contraseña"name="num" required><br>
+            <input class="buttons"  type="button" value="Login" onclick="usrpas()">
             <p><a href="#">¿Perdiste tu contraseña?</a></p>
             <p><a href="#">¿Crear cuenta?</a></p>
-        </form>
+            </form>
+
     </div>
-    
+
 </body>
 
 </html>
