@@ -15,21 +15,22 @@ body {
     width: 250px;
     margin: auto;
     margin-top: 10px;
+  
 }
 .logo img {
 width: 250px;
 margin: auto;
 
+
 }
 .form-login {
     width: 400px;
     height: 340px;
-    background: #4e4d4d;
     margin: auto;
-   margin-top: 10px;
-    box-shadow: 7px 13px 37px #000;
+    margin-top: 10px;
+    color: white;
     padding: 20px 30px;
-    border-top: 4px solid;
+    
 }
 .form-login h1 { 
     margin: 0;
@@ -56,9 +57,12 @@ margin: auto;
     width: 100%;
     height: 40px;
     background: #017bab;
-    border: none;
+    border: 2px solid;
     color: white;
     margin-bottom: 16px;
+    cursor: pointer;
+
+    
 }
 .form-login p {
     height: 40px;
