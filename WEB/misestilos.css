@@ -48,3 +48,12 @@ header a {
 header a:hover{
     color: crimson;
 }
+#menu1 {
+    background-image: url(https://i.postimg.cc/GtWw43cw/Sin-t-tulo-3.jpg%27);
+    height: 400px;
+}
+#menu1 p{
+    color: white;
+    font-size: 2em;
+
+}
