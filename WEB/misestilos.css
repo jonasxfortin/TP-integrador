@@ -49,11 +49,54 @@ header a:hover{
     color: crimson;
 }
 #menu1 {
-    background-image: url(https://i.postimg.cc/GtWw43cw/Sin-t-tulo-3.jpg%27);
-    height: 400px;
+    background-image: url(https://i.postimg.cc/sDMrhdPx/modelo-4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    
 }
 #menu1 p{
     color: white;
     font-size: 2em;
-
 }
+
+div2{
+    padding: 0% 12%;
+    text-decoration-line: underline;
+}
+
+#menu2 {
+    background-image: url(https://i.postimg.cc/XJ1KPD2H/modelo-4b.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+}
+#menu2 p{
+    color: white;
+    font-size: 1.5em;
+}
+
+#menu3 {
+    background-image: url(https://i.postimg.cc/13TfL1PN/Pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+}
+#menu3 p{
+    color: white;
+    font-size: 2em;
+}
+
+#menu4 {
+    background-image: url(https://i.postimg.cc/m21YkjDM/Ravioles.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+}
+#menu4 p{
+    color: white;
+    font-size: 2em;
+}
+
+
+
