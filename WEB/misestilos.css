@@ -45,33 +45,63 @@ header a {
     text-decoration: none;
     font-weight: 600;
 }
-header a:hover{
+
+header a:hover {
     color: crimson;
+}
+.secciones{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+}
+.botones-seleccion{
+    font: 1.5em sans-serif;
+    text-decoration: none;
+    color: coral;
+}
+#bienvenido{
+    text-align: center;
+    font-size: 2em;
+}
+.menus{
+    width: 100%;
 }
 #menu1 {
     background-image: url(https://i.postimg.cc/sDMrhdPx/modelo-4.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: center;
-    
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0 30px 0;
 }
-#menu1 p{
+#menu1 p {
     color: white;
     font-size: 2em;
+    width: 40%;
+    margin-left: 10px;
 }
 
-div2{
-    padding: 0% 12%;
+div2 {
+    padding: 0 12%;
     text-decoration-line: underline;
 }
-
+#menu1 form{
+    margin: 10px;
+    width: 20%;
+}
+#menu1 form input{
+    width: 100%;
+    margin: auto;
+    font-size: large;
+}
 #menu2 {
     background-image: url(https://i.postimg.cc/XJ1KPD2H/modelo-4b.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: center;
+    background-size: cover;
+    background-position: center;
 }
-#menu2 p{
+
+#menu2 p {
     color: white;
     font-size: 1.5em;
 }
@@ -79,10 +109,11 @@ div2{
 #menu3 {
     background-image: url(https://i.postimg.cc/13TfL1PN/Pizza.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: center;
+    background-size: cover;
+    background-position: center;
 }
-#menu3 p{
+
+#menu3 p {
     color: white;
     font-size: 2em;
 }
@@ -90,13 +121,11 @@ div2{
 #menu4 {
     background-image: url(https://i.postimg.cc/m21YkjDM/Ravioles.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: center;
+    background-size: cover;
+    background-position: center;
 }
-#menu4 p{
+
+#menu4 p {
     color: white;
     font-size: 2em;
 }
-
-
-
