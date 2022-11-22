@@ -72,7 +72,6 @@ header a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 10px 0 30px 0;
 }
 #menu1 p {
     color: white;
@@ -86,7 +85,6 @@ div2 {
     text-decoration-line: underline;
 }
 #menu1 form{
-    margin: 10px;
     width: 20%;
 }
 #menu1 form input{
@@ -103,7 +101,8 @@ div2 {
 
 #menu2 p {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    margin-left: 10px;
 }
 
 #menu3 {
@@ -116,6 +115,7 @@ div2 {
 #menu3 p {
     color: white;
     font-size: 2em;
+    margin-left: 10px;
 }
 
 #menu4 {
@@ -128,4 +128,15 @@ div2 {
 #menu4 p {
     color: white;
     font-size: 2em;
+    margin-left: 10px;
+}
+
+label{
+    color: rgb(255, 251, 0);
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+}
+input{
+    margin-left: 10px;
 }
