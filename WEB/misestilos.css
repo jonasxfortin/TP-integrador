@@ -80,8 +80,8 @@ header a:hover {
     margin-left: 10px;
 }
 
-div2 {
-    padding: 0 12%;
+#comida {
+    margin: 40px;
     text-decoration-line: underline;
 }
 #menu1 form{
@@ -92,6 +92,7 @@ div2 {
     margin: auto;
     font-size: large;
 }
+/**/
 #menu2 {
     background-image: url(https://i.postimg.cc/XJ1KPD2H/modelo-4b.jpg);
     background-repeat: no-repeat;
@@ -103,7 +104,34 @@ div2 {
     color: white;
     font-size: 1.8em;
     margin-left: 10px;
+    width: 40%;
 }
+#menu2 form{
+    width: 20%;
+    border: solid white;
+}
+
+#menu2 form input{
+    width: 100%;
+    margin: auto;
+    font-size: large;
+}
+label{
+    color: rgb(255, 251, 0);
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+    width: 20%;
+    display: flex;
+    
+}
+#sabor i{
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+}
+/**/
+
 
 #menu3 {
     background-image: url(https://i.postimg.cc/13TfL1PN/Pizza.jpg);
@@ -116,7 +144,17 @@ div2 {
     color: white;
     font-size: 2em;
     margin-left: 10px;
+    width: 40%;
 }
+#menu3 form{
+    width: 20%;
+}
+#menu3 form input{
+    width: 100%;
+    margin: auto;
+    font-size: large;
+}
+/**/
 
 #menu4 {
     background-image: url(https://i.postimg.cc/m21YkjDM/Ravioles.jpg);
@@ -129,14 +167,30 @@ div2 {
     color: white;
     font-size: 2em;
     margin-left: 10px;
+    width: 40%;
 }
-
-label{
-    color: rgb(255, 251, 0);
-    font-size: 1.5em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 10px;
+#menu4 form{
+    border: solid white;
+    width: 20%;
 }
-input{
+#menu4 form input{
+    width: 100%;
+    border: solid white;
+    font-size: large;
+}
+#sabor-r{
     margin-left: 10px;
+    width: 20%;
+    display: flex;
+    border: solid white;
+}
+#sabor-r i{
+    margin-left: 20px;
+    width: 100%;
+    border: solid white;
+    
+}
+footer{
+    width: 100%;
+    text-align: center;
 }
