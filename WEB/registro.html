@@ -14,20 +14,14 @@
     </div>
     <div class="form-login">
         <h1>Login</h1>
-        <script>
-            function usrpas(){
-            if (document.form1.txt.value=="admin" && document.form1.num.value=="1234"){window.location="index.html"}
-            else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
-            }
-            document.oncontextmenu=new Function("return false");
-            </script>
-            <form name="form1">
+        
+        <form name="form1">
             <input class="controls" type="text" placeholder="Usuario" name="txt" required><br>
-            <input class="controls" type="text" placeholder="Contraseña"name="num" required><br>
-            <input class="buttons"  type="button" value="Login" onclick="usrpas()">
+            <input class="controls" type="text" placeholder="Contraseña" name="num" required><br>
+            <input class="buttons" type="button" value="Login" onclick="usrpas()">
             <p><a href="#">¿Perdiste tu contraseña?</a></p>
             <p><a href="#">¿Crear cuenta?</a></p>
-            </form>
+        </form>
 
     </div>
 
