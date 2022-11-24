@@ -2,15 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
 
 /*mantiene el contenido al limite de la pagina, lo ancho y alto se suma automatico con el borde de la caja*/
 
 body {
     display: grid;
-    background-color:burlywood;
-
+    background-color: burlywood;
 }
 
 header {
@@ -220,4 +218,16 @@ footer {
 footer div {
     font: 1.2em sans-serif;
     margin-top: 20px;
+}
+#logo-somos{
+    width: 10%;
+    margin: auto;
+}
+#logo-somos a img{
+    width: 100%;
+    align-content: center;
+}
+#quien-somos{
+    text-align: center;
+    font: 2em sans-serif;
 }
