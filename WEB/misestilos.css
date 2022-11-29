@@ -58,9 +58,32 @@ header a:hover {
 }
 
 .botones-seleccion {
-    font: 1.5em sans-serif;
-    text-decoration: none;
-    color: coral;
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color:burlywood;
+      color: black; 
+      
+      
+}
+
+.botones-seleccion:hover {
+    background-color:#e7dd53;
+    color: red;
+    border: 2px solid #008CBA;
 }
 
 #bienvenido {
@@ -85,6 +108,21 @@ header a:hover {
     font-size: 2em;
     width: 40%;
     margin-left: 10px;
+}
+#comprar1 {
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+#comprar1:hover{
+    background-color: black;
+    color: white;
 }
 
 #comida {
@@ -144,7 +182,40 @@ label {
     width: 100%;
     display: flex;
 }
+#corregir {
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+#corregir:hover{
+    background-color: green;
+    color: white;
+}
+#comprar-menu {
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    
+    
+}
 
+#comprar-menu:hover {
+    background-color: green;
+      color: white;
+}
 /**/
 
 
@@ -171,6 +242,22 @@ label {
     width: 100%;
     margin: auto;
     font-size: large;
+}
+
+#pizza {
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+#pizza:hover {
+    background-color: red;
+    color: white;
 }
 
 /**/
@@ -206,8 +293,22 @@ label {
 #control {
     width: 100%;
     font-size: 1.3em;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+
 }
 
+#control:hover {
+    background-color: rgb(109, 3, 109);
+    color: white;
+}
 footer {
     display: flex;
     width: 100%;
