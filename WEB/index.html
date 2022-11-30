@@ -9,7 +9,7 @@
         content="En esta pagina podras comprar ricos menu y solicitar que te lo lleven, solo queda disfrutar">
     <meta name="keywords" content="comida,menu,pedido,delivery">
     <link rel="stylesheet" href="misestilos.css">
-    <script src="miscomandos.js"></script>
+    
     <title>Pedidos Ya</title>
 </head>
 
@@ -49,8 +49,9 @@
     <!--aca va el menu de seleccion-->
     <div class="menus">
         <div id="menu1">
+            
             <p>
-                <div2 id="comida">Hamburguesa</div2><br>
+                <div2 id="nombreMenu1">Hamburguesa</div2><br>
                 Pan americano con semillas de sésamo<br>
                 Carne picada de primera<br>
                 Feta de queso<br>
@@ -58,24 +59,24 @@
                 Rodaja de tomate
             </p>
 
-            <p>$ 500</p>
+            $<p><span id="precioMenu1">500</span></p>
             <div>
                 <form action="" method="get">
-                    <input type="number" name="cantidad" id="cantidad">
-                    <input type="submit" value="Comprar Menu" id="comprar1">
+                    <input type="number" name="cantidad" id="cant1">
                 </form>
+                <button onclick="compraMenu1()"> Comprar menu</button>
             </div>
         </div>
 
         <div id="menu2">
             <p>
-                <div2 id="comida">Milanesa napolitana</div2><br>
+                <div2 id="nombreMenu2">Milanesa napolitana</div2><br>
                 Milanesa de ternera <br>
                 Muzzarela <br>
                 Rodajas de tomate<br>
                 Porcion de papas fritas<br><br>
             </p>
-            <p>$ 900</p>
+            <p>$ <span id="precioMenu2">900</span></p>
             <div>
                 <form action="" method="get">
                     <label id="sabor"><input type="radio" name="mayonesa">
@@ -88,39 +89,40 @@
                         <i>Ketchup</i>
                     </label>
                     <input id="corregir" type="reset" value="Corregir eleccion"><br><br>
-                    <input type="number" name="cantidad" id="cantidad">
-                    <input id="comprar-menu" type="submit" value="Comprar Menú">
+                    <input type="number" name="cantidad" id="cant2">
+                    
                 </form>
+                <button onclick="compraMenu2()"> Comprar menu</button>
             </div>
         </div>
 
         <div id="menu3">
             <p>
-                <div2 id="comida">Pizza grande</div2><br>
+                <div2 id="nombreMenu3">Pizza grande</div2><br>
                 Salsa de tomate<br>
                 Muzzarela<br>
                 Aceitunas<br>
                 Tomate<br>
                 Orégano<br><br>
             </p>
-            <p>$ 750</p>
+            <p>$ <span id="precioMenu3">750</span></p>
             <div>
                 <form action="" method="get">
-                    <input type="number" name="cantidad" id="cantidad">
-                    <input type="submit" value="Comprar Menú" id="pizza">
-                </form>
+                    <input type="number" name="cantidad" id="cant3">
+                    </form>
+                    <button onclick="compraMenu3()"> Comprar menu</button>
             </div>
         </div>
 
         <div id="menu4">
             <p>
-                <div2 id="comida">Ravioles</div2><br>
+                <div2 id="nombreMenu4">Ravioles</div2><br>
                 Ravioles de ricota<br>
                 Queso rayado<br>
                 Salsa a eleccion<br><br>
             </p>
 
-            <p>$ 950</p>
+            <p>$<span id="precioMenu4">950</span></p>
             <div>
                 <form action="" method="get">
                     <label id="sabor-r"><input type="radio" name="Fileto">
@@ -130,19 +132,26 @@
                         <i>Salsa blanca</i>
                     </label>
                     <input id="control" type="reset" value="Borrar Sabores">
-                    <input type="number" name="cantidad" id="cantidad">
-                    <input id="control" type="submit" value="Comprar Menú">
+                    <input type="number" name="cantidad" id="cant4">
+                    
                 </form>
+                <button onclick="compraMenu4()"> Comprar menu</button>
             </div>
         </div>
     </div>
 
+    <div id="cajaPedido">
+        <h2>Mi pedido</h2>
+        <p id="nuevoPedido"></p>
 
+    </div>
+    
     <footer>
         <div>creado por @colegas</div>
         <div>copyright 2022 - Todos los derechos reservados</div>
         <div id="contacto">11-2233-4455 - pedidoya@gmail.com</div>
     </footer>
+    <script src="miscomandos.js"></script>
 </body>
 
 </html>
