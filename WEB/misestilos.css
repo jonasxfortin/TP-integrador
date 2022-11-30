@@ -1,370 +1,364 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*mantiene el contenido al limite de la pagina, lo ancho y alto se suma automatico con el borde de la caja*/
 
 body {
-    display: grid;
-    background-color: burlywood;
+  display: grid;
+  background-color: burlywood;
 }
 
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #e7dd53;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e7dd53;
 }
 
 header div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header div img {
-    width: 100px;
+  width: 100px;
 }
 
 header div p {
-    text-align: center;
-    color: red;
-    margin-left: 10px;
-    font-weight: 600;
+  text-align: center;
+  color: red;
+  margin-left: 10px;
+  font-weight: 600;
 }
 
 header nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header a {
-    margin-right: 10px;
-    color: blue;
-    text-decoration: none;
-    font-weight: 600;
+  margin-right: 10px;
+  color: blue;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 header a:hover {
-    color: crimson;
+  color: crimson;
 }
 
 .secciones {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin: 10px 0 10px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 10px 0 10px 0;
 }
 
 .botones-seleccion {
-    color: #0099CC;
-    background: transparent;
-    border: 2px solid #0099CC;
-    border-radius: 6px;
-    border: none;
-      color: white;
-      padding: 16px 32px;
-      text-align: center;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      -webkit-transition-duration: 0.4s; /* Safari */
-      transition-duration: 0.4s;
-      cursor: pointer;
-      text-decoration: none;
-      text-transform: uppercase;
-      background-color:burlywood;
-      color: black; 
-      
-      
+  color: #0099cc;
+  background: transparent;
+  border: 2px solid #0099cc;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: burlywood;
+  color: black;
 }
 
 .botones-seleccion:hover {
-    background-color:#e7dd53;
-    color: red;
-    border: 2px solid #008CBA;
+  background-color: #e7dd53;
+  color: red;
+  border: 2px solid #008cba;
 }
 
 #bienvenido {
-    text-align: center;
-    font-size: 2em;
+  text-align: center;
+  font-size: 2em;
 }
 
 .menus {
-    width: 100%;
+  width: 100%;
 }
-
+/*menu 1*/
 #menu1 {
-    background-image: url(https://i.postimg.cc/sDMrhdPx/modelo-4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
+  background-image: url(https://i.postimg.cc/sDMrhdPx/modelo-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
 }
 
 #menu1 p {
-    color: white;
-    font-size: 2em;
-    width: 40%;
-    margin-left: 10px;
+  color: white;
+  font-size: 2em;
+  width: 40%;
+  margin-left: 10px;
 }
 #comprar1 {
-    padding: 5px 15px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
 }
-#comprar1:hover{
-    background-color: black;
-    color: white;
+#comprar1:hover {
+  background-color: black;
+  color: white;
 }
 
 #comida {
-    margin: 40px;
-    text-decoration-line: underline;
+  margin: 40px;
+  text-decoration-line: underline;
 }
 
 #menu1 form {
-    width: 20%;
+  width: 20%;
 }
 
 #menu1 form input {
-    width: 100%;
-    margin: auto;
-    font-size: large;
+  width: 100%;
+  margin: auto;
+  font-size: large;
 }
 
-/**/
+/*menu 2*/
 #menu2 {
-    background-image: url(https://i.postimg.cc/XJ1KPD2H/modelo-4b.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
+  background-image: url(https://i.postimg.cc/XJ1KPD2H/modelo-4b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
 }
 
 #menu2 p {
-    color: white;
-    font-size: 1.8em;
-    margin-left: 10px;
-    width: 40%;
+  color: white;
+  font-size: 1.8em;
+  margin-left: 10px;
+  width: 40%;
 }
 
 #menu2 form {
-    width: 20%;
+  width: 20%;
 }
 
 #menu2 form input {
-    width: 100%;
-    margin: auto;
-    font-size: large;
+  width: 100%;
+  margin: auto;
+  font-size: large;
 }
 
 label {
-    color: rgb(255, 251, 0);
-    font-size: 1.5em;
-    font-family: Cambria, Cochin, georgia, Times, 'Times New Roman', serif;
-    margin-left: 10px;
-    width: 20%;
-    display: flex;
+  color: rgb(255, 251, 0);
+  font-size: 1.5em;
+  font-family: Cambria, Cochin, georgia, Times, "Times New Roman", serif;
+  margin-left: 10px;
+  width: 20%;
+  display: flex;
 }
 
 #sabor i {
-    margin-left: 20px;
-    width: 100%;
-    display: flex;
+  margin-left: 20px;
+  width: 100%;
+  display: flex;
 }
 #corregir {
-    padding: 5px 15px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
-    
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
 }
-#corregir:hover{
-    background-color: green;
-    color: white;
+#corregir:hover {
+  background-color: green;
+  color: white;
 }
 #comprar-menu {
-    padding: 5px 15px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
-    
-    
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 #comprar-menu:hover {
-    background-color: green;
-      color: white;
+  background-color: green;
+  color: white;
 }
-/**/
 
+/*menu 3*/
 
 #menu3 {
-    background-image: url(https://i.postimg.cc/13TfL1PN/Pizza.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
+  background-image: url(https://i.postimg.cc/13TfL1PN/Pizza.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
 }
 
 #menu3 p {
-    color: white;
-    font-size: 2em;
-    margin-left: 10px;
-    width: 40%;
+  color: white;
+  font-size: 2em;
+  margin-left: 10px;
+  width: 40%;
 }
 
 #menu3 form {
-    width: 20%;
+  width: 20%;
 }
 
 #menu3 form input {
-    width: 100%;
-    margin: auto;
-    font-size: large;
+  width: 100%;
+  margin: auto;
+  font-size: large;
 }
 
 #pizza {
-    padding: 5px 15px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
 }
 #pizza:hover {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 
-/**/
+/* menu 4*/
 
 #menu4 {
-    background-image: url(https://i.postimg.cc/m21YkjDM/Ravioles.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
+  background-image: url(https://i.postimg.cc/m21YkjDM/Ravioles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
 }
 
 #menu4 p {
-    color: white;
-    font-size: 2em;
-    margin-left: 10px;
-    width: 40%;
+  color: white;
+  font-size: 2em;
+  margin-left: 10px;
+  width: 40%;
 }
 
 #menu4 div form {
-    width: 20%;
+  width: 20%;
 }
 
 #sabor-r {
-    width: 60%;
-    margin: auto;
+  width: 60%;
+  margin: auto;
 }
 
 #sabor-r i {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #control {
-    width: 100%;
-    font-size: 1.3em;
-    padding: 5px 15px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
-
+  width: 100%;
+  font-size: 1.3em;
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 #control:hover {
-    background-color: rgb(109, 3, 109);
-    color: white;
+  background-color: rgb(109, 3, 109);
+  color: white;
 }
 footer {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-content: space-around;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: space-around;
 }
 
 footer div {
-    font: 1.2em sans-serif;
-    margin-top: 20px;
+  font: 1.2em sans-serif;
+  margin-top: 20px;
 }
-    /* quienes somos */
-#logo-somos{
-    width: 10%;
-    margin: auto;
+/* quienes somos */
+#logo-somos {
+  width: 10%;
+  margin: auto;
 }
-#logo-somos a img{
-    width: 100%;
-    align-content: center;
+#logo-somos a img {
+  width: 100%;
+  align-content: center;
 }
-#quien-somos{
-    text-align: center;
-    font: 2em sans-serif;
+#quien-somos {
+  text-align: center;
+  font: 2em sans-serif;
 }
-#somos{
-    text-align: justify;
-    margin: 10px 50px 0 50px;
+#somos {
+  text-align: justify;
+  margin: 10px 50px 0 50px;
 }
-#text{
-    text-align: justify;
-    margin: 10px 50px 0 50px;
+#text {
+  text-align: justify;
+  margin: 10px 50px 0 50px;
 }
-h4{
-    text-align: center;
-    margin: 30px 0 10px 0px;
+h4 {
+  text-align: center;
+  margin: 30px 0 10px 0px;
 }
-#text2{
-    text-align: center;
+#text2 {
+  text-align: center;
 }
 
 /* pedido */
 
-#mi-pedido{
-    text-align: center;
-    margin: 10px 50px 0 50px;
+#mi-pedido {
+  text-align: center;
+  margin: 10px 50px 0 50;
 }
 
-#cajaPedido{
-    width: 100%;
-    border: solid;
-    border: dotted red;
-    text-align: center;
-    margin-top: 10px;
-    background-color: aliceblue;
+#cajaPedido {
+  width: 100%;
+  border: solid;
+  border: dotted red;
+  text-align: center;
+  margin-top: 10px;
+  background-color: aliceblue;
 }
 
-#nuevoPedido{
-    margin: 20px 0 20px 0;
-    font-size: x-large;
-    color: darkred;
+#nuevoPedido {
+  margin: 20px 0 20px 0;
+  font-size: x-large;
+  color: darkred;
 }

@@ -1,82 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: arial;
-    background-image: url(https://i.postimg.cc/W4yDwFgT/comida.jpg);
-  
-    background-size: cover;
-    background-repeat:no-repeat ;
-    max-width: 100%;
+  font-family: arial;
+  background-image: url(https://i.postimg.cc/W4yDwFgT/comida.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
 }
 .logo {
-    width: 250px;
-    margin: auto;
-    margin-top: 10px;
-  
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
 }
 .logo img {
-width: 250px;
-margin: auto;
-
-
+  width: 250px;
+  margin: auto;
 }
 .form-login {
-    width: 400px;
-    height: 340px;
-    margin: auto;
-    margin-top: 10px;
-    color: white;
-    padding: 20px 30px;
-    
+  width: 400px;
+  height: 340px;
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+  padding: 20px 30px;
 }
-.form-login h1 { 
-    margin: 0;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 30px;
-    border-bottom:1px solid;
-    font-size: 20px;
-
-
+.form-login h1 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
 }
 
 .controls {
-    width: 100%;
-    border: 1px solid;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    font-size: 14px;
-    font-weight: bold;
-
+  width: 100%;
+  border: 1px solid;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .buttons {
-    width: 100%;
-    height: 40px;
-    background: #017bab;
-    border: 2px solid;
-    color: white;
-    margin-bottom: 16px;
-    cursor: pointer;
-
-    
+  width: 100%;
+  height: 40px;
+  background: #017bab;
+  border: 2px solid;
+  color: white;
+  margin-bottom: 16px;
+  cursor: pointer;
 }
 .form-login p {
-    height: 40px;
-    text-align: center;
-  
-
+  height: 40px;
+  text-align: center;
 }
 .form-login a {
-    color: white;
-    text-decoration: none;
-
+  color: white;
+  text-decoration: none;
 }
 
 .form-login a:hover {
-    text-decoration: underline;
-    
+  text-decoration: underline;
 }
