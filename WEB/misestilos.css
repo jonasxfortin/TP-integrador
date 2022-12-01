@@ -173,26 +173,6 @@ label {
   display: flex;
 }
 
-#sabor i {
-  margin-left: 20px;
-  width: 100%;
-  display: flex;
-}
-#corregir {
-  padding: 5px 15px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  text-decoration: none;
-}
-#corregir:hover {
-  background-color: green;
-  color: white;
-}
 #comprar-menu {
   padding: 5px 15px;
   text-align: center;
@@ -272,15 +252,6 @@ label {
 
 #menu4 div form {
   width: 20%;
-}
-
-#sabor-r {
-  width: 60%;
-  margin: auto;
-}
-
-#sabor-r i {
-  margin-left: 10px;
 }
 
 #control {

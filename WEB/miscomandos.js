@@ -16,11 +16,11 @@ function compraMenu1() {
   let cantMenu1 = parseInt(document.getElementById("cant1").value);
   let confirmado = confirm(
     "Tu orden de " +
-      cantMenu1 +
-      " " +
-      nombMenu +
-      " tiene un valor de " +
-      precioMenu * cantMenu1
+    cantMenu1 +
+    " " +
+    nombMenu +
+    " tiene un valor de " +
+    precioMenu * cantMenu1
   );
   if (cantMenu1 > 1) {
     nombMenu = "Hamburguesas";
@@ -43,13 +43,29 @@ function compraMenu2() {
   let nombMenu2 = document.getElementById("nombreMenu2").innerHTML;
   let precioMenu2 = parseInt(document.getElementById("precioMenu2").innerHTML);
   let cantMenu2 = parseInt(document.getElementById("cant2").value);
+  let aderezos = document.getElementById("aderezos").value;
+  if (aderezos=="sinAderezo"){
+    aderezos="sin aderezo"
+  }
+  else if (aderezos=="Mayonesa"){
+    aderezos="con mayonesa"
+  }
+  else if (aderezos=="Mostaza"){
+    aderezos="con mostaza"
+  }
+  else{
+    aderezos="con ketchup"
+  }
+
   let confirmado = confirm(
     "Tu orden de " +
-      cantMenu2 +
-      " " +
-      nombMenu2 +
-      " tiene un valor de " +
-      precioMenu2 * cantMenu2
+    cantMenu2 +
+    " " +
+    nombMenu2 +
+    " "+
+    aderezos +
+    " tiene un valor de " +
+    precioMenu2 * cantMenu2
   );
   if (cantMenu2 > 1) {
     nombMenu2 = "Milanesas a la napolitana";
@@ -61,6 +77,8 @@ function compraMenu2() {
       cantMenu2 +
       " " +
       nombMenu2 +
+      " "+
+      aderezos +
       " tiene un valor de " +
       precioMenu2 * cantMenu2;
     let pedidoAgre = document.getElementById("nuevoPedido");
@@ -74,11 +92,11 @@ function compraMenu3() {
   let cantMenu3 = parseInt(document.getElementById("cant3").value);
   let confirmado = confirm(
     "Tu orden de " +
-      cantMenu3 +
-      " " +
-      nombMenu3 +
-      " tiene un valor de " +
-      precioMenu3 * cantMenu3
+    cantMenu3 +
+    " " +
+    nombMenu3 +
+    " tiene un valor de " +
+    precioMenu3 * cantMenu3
   );
   if (cantMenu3 > 1) {
     nombMenu3 = "Pizzas";
@@ -101,13 +119,28 @@ function compraMenu4() {
   let nombMenu4 = document.getElementById("nombreMenu4").innerHTML;
   let precioMenu4 = parseInt(document.getElementById("precioMenu4").innerHTML);
   let cantMenu4 = parseInt(document.getElementById("cant4").value);
+  let sabores = document.getElementById("sabores").value;
+  if (sabores=="sinSalsa"){
+    sabores="sin salsa"
+  }
+  else
+  if (sabores=="salsaFi"){
+    sabores="con salsa fileto"
+  }
+  else{
+    sabores="con salsa blanca"
+  }
+
+
   let confirmado = confirm(
     "Tu orden de " +
-      cantMenu4 +
-      " platos de " +
-      nombMenu4 +
-      " tiene un valor de " +
-      precioMenu4 * cantMenu4
+    cantMenu4 +
+    " platos de " +
+    nombMenu4 +
+    " "+
+    sabores +
+    " tiene un valor de " +
+    precioMenu4 * cantMenu4
   );
   if (cantMenu4 > 1) {
     nombMenu4 = "platos de Ravioles";
@@ -119,6 +152,8 @@ function compraMenu4() {
       cantMenu4 +
       " " +
       nombMenu4 +
+      " "+
+      sabores +
       " tiene un valor de " +
       precioMenu4 * cantMenu4;
     let pedidoAgre = document.getElementById("nuevoPedido");

@@ -24,7 +24,7 @@
             <a href="micuenta.html" target="_blank" rel="noopener noreferrer">Mi cuenta</a>
             <a href="quienessomos.html" target="_blank" rel="noopener noreferrer">Quienes somos</a>
             <!--les parece agregar quienes somos y que hacemos ??-->
-            <a href="mipedido.html" target="_blank" rel="noopener noreferrer">Mi pedido</a>
+            <a href="#cajaPedido" target="_blank" rel="noopener noreferrer">Mi pedido</a>
             <a href="#contacto" rel="noopener noreferrer">Contacto</a>
             <!--va en el footer-->
         </nav>
@@ -58,7 +58,7 @@
                 Rodaja de tomate
             </p>
 
-            <p>$<span id="precioMenu1">500</span></p>
+            <p>$ <span id="precioMenu1">500</span></p>
             <div>
                 <form action="" method="get">
                     <input type="number" name="cantidad" id="cant1">
@@ -77,17 +77,14 @@
             </p>
             <p>$ <span id="precioMenu2">900</span></p>
             <div>
+                <label for="aderezos">Elije un aderezo:</label>
+                <select name="aderezos" id="aderezos">
+                    <option value="sinAderezo">Sin Aderezo</option>
+                    <option value="Mayonesa">Mayonesa</option>
+                    <option value="Mostaza">Mostaza</option>
+                    <option value="Ketchup">Ketchup</option>
+                    </select>
                 <form action="" method="get">
-                    <label id="sabor"><input type="radio" name="mayonesa">
-                        <i>Mayonesa</i>
-                    </label>
-                    <label id="sabor"><input type="radio" name="sabora">
-                        <i>Sabora</i>
-                    </label>
-                    <label id="sabor"><input type="radio" name="ketchup">
-                        <i>Ketchup</i>
-                    </label>
-                    <input id="corregir" type="reset" value="Corregir eleccion"><br><br>
                     <input type="number" name="cantidad" id="cant2">
                 </form>
                 <button onclick="compraMenu2()"> Comprar menu</button>
@@ -107,8 +104,8 @@
             <div>
                 <form action="" method="get">
                     <input type="number" name="cantidad" id="cant3">
-                    </form>
-                    <button onclick="compraMenu3()"> Comprar menu</button>
+                </form>
+                <button onclick="compraMenu3()"> Comprar menu</button>
             </div>
         </div>
 
@@ -120,16 +117,16 @@
                 Salsa a eleccion<br><br>
             </p>
 
-            <p>$<span id="precioMenu4">950</span></p>
+            <p>$ <span id="precioMenu4">950</span></p>
             <div>
+                <label for="sabores">Elije una salsa:</label>
+
+                <select name="sabores" id="sabores">
+                    <option value="sinSalsa">Sin salsa</option>
+                    <option value="salsaFi">Salsa Fileto</option>
+                    <option value="salsaBl">Salsa Blanca</option>
+                    </select>
                 <form action="" method="get">
-                    <label id="sabor-r"><input type="radio" name="Fileto">
-                        <i>Salsa fileto</i>
-                    </label>
-                    <label id="sabor-r"><input type="radio" name="Blanca">
-                        <i>Salsa blanca</i>
-                    </label>
-                    <input id="control" type="reset" value="Borrar Sabores">
                     <input type="number" name="cantidad" id="cant4">
                 </form>
                 <button onclick="compraMenu4()"> Comprar menu</button>
